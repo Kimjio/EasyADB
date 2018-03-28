@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="EasyADB">
+    <output-path>$PROJECT_DIR$/out/artifacts/EasyADB</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="alias" value="" />
+        <option name="appClass" value="com.kimjio.easyadb.app.Login" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/res/drawable/ic_launcher.png" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/res/drawable/ic_launcher.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="keystore" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="EasyADB" />
+        <option name="vendor" value="Kim Ji O" />
+        <option name="version" value="1.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="EasyADB.jar">
+        <element id="module-output" name="EasyADB" />
+      </element>
+      <element id="library" level="project" name="jfoenix" />
+      <element id="library" level="project" name="mysql-connector-java-5.1.44-bin" />
+      <element id="library" level="project" name="commons-collections4-4.1" />
+    </root>
+  </artifact>
+</component>

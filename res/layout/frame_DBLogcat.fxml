@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import com.jfoenix.controls.JFXTreeTableColumn?>
+<Tab xmlns:fx="http://javafx.com/fxml/1"
+     xmlns="http://javafx.com/javafx/2.2">
+    <VBox spacing="10" maxWidth="Infinity" maxHeight="Infinity">
+        <HBox alignment="CENTER">
+
+        </HBox>
+        <HBox alignment="CENTER">
+            <StackPane HBox.hgrow="ALWAYS">
+                <StackPane StackPane.alignment="CENTER_RIGHT" maxWidth="200">
+                    <JFXTextField fx:id="searchField" promptText="검색..."/>
+                </StackPane>
+            </StackPane>
+        </HBox>
+        <JFXTreeTableView fx:id="treeTableView" maxHeight="Infinity" maxWidth="Infinity">
+            <columns>
+                <JFXTreeTableColumn fx:id="logTimeColumn" text="시간"
+                                    minWidth="80"/>
+                <JFXTreeTableColumn fx:id="priorityColumn" text="우선 순위"
+                                    minWidth="20"/>
+                <JFXTreeTableColumn fx:id="tagColumn" text="태그"
+                                    minWidth="70"/>
+                <JFXTreeTableColumn fx:id="contentColumn" text="내용"
+                                    minWidth="600" maxWidth="Infinity"/>
+            </columns>
+        </JFXTreeTableView>
+    </VBox>
+</Tab>

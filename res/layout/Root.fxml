@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<GridPane fx:id="root" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          prefHeight="150.0" prefWidth="200.0" alignment="CENTER" hgap="10.0" vgap="10.0">
+
+    <JFXButton fx:id="rootButton" buttonType="RAISED" prefHeight="40" prefWidth="80"
+               style="-fx-font-size:14px;-fx-background-color:WHITE;" text="루트" GridPane.columnIndex="0"
+               GridPane.rowIndex="0"/>
+    <JFXButton fx:id="unRootButton" buttonType="RAISED" prefHeight="40" prefWidth="80"
+               style="-fx-font-size:14px;-fx-background-color:WHITE;" text="언루트" GridPane.columnIndex="1"
+               GridPane.rowIndex="0"/>
+
+</GridPane>

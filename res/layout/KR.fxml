@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<StackPane fx:id="root" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <GridPane alignment="CENTER">
+        <Label fx:id="app_name" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size:30px" text="EasyADB" textAlignment="CENTER" />
+        <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets>
+                    <left>10</left>
+                    <bottom>10</bottom>
+                </Insets>
+            </GridPane.margin>
+            <Label fx:id="eng" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size:15px" text="Easy to use adb command line tool with GUI" textAlignment="CENTER" />
+            <Label fx:id="kor" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size:10px" text="GUI로 adb 명령행 도구를 쉽게" textAlignment="CENTER" />
+        </VBox>
+        <Label fx:id="by" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size:12.5px" text="Made by Ji O" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    </GridPane>
+</StackPane>

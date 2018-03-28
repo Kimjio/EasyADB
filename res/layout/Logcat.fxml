@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<StackPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1"
+           xmlns="http://javafx.com/javafx/2.2" prefWidth="900" minHeight="600" maxHeight="650">
+    <VBox spacing="10" maxWidth="Infinity" maxHeight="Infinity">
+        <VBox spacing="20">
+            <JFXToolbar>
+                <leftItems>
+                    <Label>Logcat</Label>
+                </leftItems>
+                <rightItems>
+                    <StackPane HBox.hgrow="ALWAYS">
+                        <StackPane StackPane.alignment="CENTER_RIGHT" maxWidth="200">
+                            <JFXTextField fx:id="searchField" promptText="검색..." style="-fx-text-fill: WHITE; -fx-prompt-text-fill: WHITE; -jfx-focus-color: #ff4081; -jfx-unfocus-color: #ede7f6;"/>
+                        </StackPane>
+                        <StackPane.margin>
+                            <Insets>
+                                <right>10</right>
+                            </Insets>
+                        </StackPane.margin>
+                    </StackPane>
+                    <JFXRippler fx:id="optionsRippler" maskType="CIRCLE"
+                                style="-fx-ripple-color:WHITE;">
+                        <StackPane fx:id="optionsBurger">
+                            <JFXHamburger fx:id="menu" styleClass="jfx-options-burger">
+                            </JFXHamburger>
+                        </StackPane>
+                    </JFXRippler>
+                </rightItems>
+            </JFXToolbar>
+        </VBox>
+        <JFXTreeTableView fx:id="treeTableView" maxHeight="Infinity" maxWidth="Infinity">
+            <columns>
+                <JFXTreeTableColumn fx:id="logDateColumn"
+                                    minWidth="50" text="날짜" />
+                <JFXTreeTableColumn fx:id="logTimeColumn" text="시간"
+                                    minWidth="80" />
+                <JFXTreeTableColumn fx:id="priorityColumn" text="우선 순위"
+                                    minWidth="20" />
+                <JFXTreeTableColumn fx:id="tagColumn" text="태그"
+                                    minWidth="70" />
+                <JFXTreeTableColumn fx:id="contentColumn" text="내용"
+                                    minWidth="490" maxWidth="Infinity"/>
+            </columns>
+        </JFXTreeTableView>
+    </VBox>
+</StackPane>

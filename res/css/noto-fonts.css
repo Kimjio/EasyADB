@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Noto Sans CJK KR Regular;
+    src: url("../font/notokr/NotoSansCJKkr-Regular.otf");
+}
+
+@font-face {
+    font-family: Noto Sans CJK KR Medium;
+    src: url("../font/notokr/NotoSansCJKkr-Medium.otf");
+}
+
+@font-face {
+    font-family: Noto Sans CJK KR Light;
+    src: url("../font/notokr/NotoSansCJKkr-Light.otf");
+}
+
+@font-face {
+    font-family: Noto Sans CJK KR Thin;
+    src: url("../font/notokr/NotoSansCJKkr-Thin.otf");
+}
+
+@font-face {
+    font-family: Noto Sans CJK KR Bold;
+    src: url("../font/notokr/NotoSansCJKkr-Bold.otf");
+}
+

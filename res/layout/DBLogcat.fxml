@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import com.jfoenix.controls.JFXRippler?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<StackPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1"
+           xmlns="http://javafx.com/javafx/2.2" minWidth="75" minHeight="600" maxHeight="650">
+    <GridPane>
+        <JFXToolbar prefHeight="70" GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <leftItems>
+                <Label>DBLogcat</Label>
+            </leftItems>
+            <rightItems>
+                <JFXRippler fx:id="optionsRippler" maskType="CIRCLE"
+                            style="-fx-ripple-color:WHITE;">
+                    <StackPane fx:id="optionsBurger">
+                        <JFXHamburger fx:id="menu" styleClass="jfx-options-burger">
+                        </JFXHamburger>
+                    </StackPane>
+                </JFXRippler>
+            </rightItems>
+        </JFXToolbar>
+        <JFXTabPane fx:id="tabLayout" tabMinHeight="45" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    </GridPane>
+</StackPane>

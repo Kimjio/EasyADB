@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<JFXListView fx:id="menuList" styleClass="option-list-view"
+             xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <Label>
+        전체 기록 삭제
+    </Label>
+    <Label>
+        이 탭의 기록 삭제
+    </Label>
+</JFXListView>
